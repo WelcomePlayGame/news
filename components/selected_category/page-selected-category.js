@@ -1,5 +1,5 @@
 const SelectedCategory = ({ onChange }) => {
-  const categories = ['war', 'economy'];
+  const categories = ['war in Ukraine', 'economy', 'terror'];
 
   return (
     <main className={`w-[200px] mt-[50xp]`}>

@@ -11,8 +11,8 @@ const PageAside = () => {
     return <PageTabPopular articles={articles} />;
   };
   return (
-    <main className={`ml-[30px]`}>
-      <div className={`flex flex-col items-start mt-[100px]`}>
+    <main className={`md:ml-[30px]`}>
+      <div className={`flex flex-col items-start mt-[10px] md:mt-[100px]`}>
         <div className={`${classes.connect_us_container}`}></div>
         <h3 className={`${classes.connect_us_h3} w-[300px]`}>
           Connect With Us

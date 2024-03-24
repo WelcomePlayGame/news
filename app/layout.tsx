@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import NavPage from '@/components/header/nav-page';
-import HeaderPage from '@/components/header/header-page';
-import NavNavigation from '@/components/header/nav-navigation-page';
-import useAdminRoute from '../components/addarticle/page-isadmin';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import { Analytics } from '@vercel/analytics/react';
+import GoogleAdsense from '@/components/google-ads/page-google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -98,10 +97,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <SpeedInsights />
+        <Analytics />
+      </head>
       <body suppressHydrationWarning={true} className={inter.className}>
         <ToastContainer />
         {children}
       </body>
+      <GoogleAdsense />
     </html>
   );
 }

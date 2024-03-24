@@ -11,15 +11,23 @@ const NavNavigation = () => {
         <li className={`${classes.li_container_nav}`}>
           <Link
             href={'/'}
-            className={`${classes.a_container_nav} text-[14px] p-[5px] md:text-[1.2rem] md:p-[15px]`}
+            className={`${classes.a_container_nav} text-[14px] p-[5px] md:text-[0.8rem] md:p-[15px] lg:text-[1.2rem]`}
           >
             Home
           </Link>
         </li>
         <li className={`${classes.li_container_nav}`}>
           <Link
+            href={`/news`}
+            className={`${classes.a_container_nav} text-[14px] p-[5px] md:text-[0.8rem] md:p-[15px] lg:text-[1.2rem]`}
+          >
+            News
+          </Link>
+        </li>
+        <li className={`${classes.li_container_nav}`}>
+          <Link
             href={`/blog`}
-            className={`${classes.a_container_nav} text-[14px] p-[5px] md:text-[1.2rem] md:p-[15px]`}
+            className={`${classes.a_container_nav} text-[14px] p-[5px] md:text-[0.8rem] md:p-[15px] lg:text-[1.2rem]`}
           >
             Blog
           </Link>
@@ -27,7 +35,7 @@ const NavNavigation = () => {
         <li className={`${classes.li_container_nav}`}>
           <Link
             href={`/about`}
-            className={`${classes.a_container_nav} text-[14px] p-[5px] md:text-[1.2rem] md:p-[15px]`}
+            className={`${classes.a_container_nav} text-[14px] p-[5px] md:text-[0.8rem] md:p-[15px] lg:text-[1.2rem]`}
           >
             About
           </Link>
