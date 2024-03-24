@@ -1,5 +1,6 @@
 import classes from './nav-page.module.css';
 import Link from 'next/link';
+
 const NavPage = () => {
   return (
     <main className="bg-gray-800">

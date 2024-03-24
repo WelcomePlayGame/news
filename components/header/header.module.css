@@ -2,8 +2,21 @@
   color: #333;
   text-transform: uppercase;
   line-height: 1em;
+  animation: fade-from-top 1s ease-out forwards;
 }
 .sub_branding {
   color: #a6a6a6;
   text-transform: uppercase;
+}
+@keyframes fade-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
 }

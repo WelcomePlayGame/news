@@ -1,13 +1,17 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import './globals.css';
-import NavPage from '@/components/header/nav-page';
-import HeaderPage from '@/components/header/header-page';
-import NavNavigation from '@/components/header/nav-navigation-page';
-import useAdminRoute from '../components/addarticle/page-isadmin';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-const inter = Inter({ subsets: ['latin'] });
+import { Analytics } from '@vercel/analytics/react';
+import GoogleAdsense from '@/components/google-ads/page-google';
+const inter = Montserrat({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: process.env.MAIN_TITLE,
@@ -98,10 +102,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <SpeedInsights />
+        <Analytics />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-8462086079240804"
+        ></meta>
+      </head>
       <body suppressHydrationWarning={true} className={inter.className}>
         <ToastContainer />
         {children}
       </body>
+      <GoogleAdsense />
     </html>
   );
 }

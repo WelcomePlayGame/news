@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import Image from 'next/image';
 import classes from './page-picker.module.css';
 const PickerImage = ({ label, name }) => {
-  const [pickedImage, setPickedImage] = useState();
+  const [pickedImage, setPickedImage] = useState(null);
   const imageInput = useRef();
   const handlePicker = () => {
     imageInput.current.click();
