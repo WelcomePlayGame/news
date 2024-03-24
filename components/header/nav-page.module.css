@@ -1,0 +1,17 @@
+.nav_container::before {
+  display: table;
+  line-height: 0;
+  content: '';
+}
+.ul_container {
+  border-left: 1px dotted #565656;
+}
+.li_container {
+  border-right: 1px dotted #565656;
+  height: 2.5rem;
+  text-transform: uppercase;
+}
+.li_container a {
+  font-size: 0.9em;
+  padding: 0 15px;
+}

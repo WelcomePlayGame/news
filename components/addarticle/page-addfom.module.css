@@ -1,0 +1,7 @@
+.editor_container {
+  margin-top: 50px;
+  border: 1px solid #ddd;
+  cursor: text;
+  min-height: 400px;
+  padding: 20px;
+}

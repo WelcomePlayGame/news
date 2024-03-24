@@ -1,0 +1,10 @@
+.timeandcategory_container::after {
+  width: 6px;
+  float: right;
+  content: '/';
+  display: block;
+  color: rgba(31, 41, 51, 0.5);
+  font-size: 1.3em;
+  margin-top: -4px;
+  margin-left: 15px;
+}

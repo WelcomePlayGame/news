@@ -1,0 +1,22 @@
+.tabs {
+  border: solid #333;
+  border-width: 1px 0 3px;
+  margin-top: 20px;
+}
+.tab_child {
+  padding: 4px 15px;
+  color: #a6a6a6;
+  font-size: 1.1em;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+button.active {
+  color: #fff;
+  background: #333;
+}
